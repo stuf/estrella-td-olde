@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cd57252-5429-40b4-9854-e3ca00ca062d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/app/game.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/app/entities/map.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/app/entities/mob.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/app/enums/mobTypes.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/app/entities/path.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/app/entities/player.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/app/entities/tower.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/app/enums/towerTypes.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/estrella-td.iws" afterPath="$PROJECT_DIR$/estrella-td.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/main.js" afterPath="$PROJECT_DIR$/www/app/main.js" />
     </list>
     <ignored path="estrella-td.iws" />
@@ -9,6 +18,14 @@
     <file path="/Dummy.txt" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380388178207" ignored="false" />
     <file path="/index.html" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380388475467" ignored="false" />
     <file path="/main.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380391680435" ignored="false" />
+    <file path="/tower.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380393515750" ignored="false" />
+    <file path="/mob.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380393378155" ignored="false" />
+    <file path="/path.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380393271800" ignored="false" />
+    <file path="/map.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380394386558" ignored="false" />
+    <file path="/player.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380393451424" ignored="false" />
+    <file path="/towerTypes.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380393672096" ignored="false" />
+    <file path="/mobTypes.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380393744796" ignored="false" />
+    <file path="/game.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380394178342" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,10 +95,82 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/app/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="28" selection-start="265" selection-end="265" vertical-scroll-proportion="0.44345897">
+            <state line="12" column="9" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="game.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/game.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tower.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/entities/tower.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="35" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="towerTypes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/enums/towerTypes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="2" selection-start="0" selection-end="138" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mobTypes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/enums/mobTypes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="0" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mob.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/entities/mob.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="37" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="path.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/entities/path.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="player.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/entities/player.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="map.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/app/entities/map.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.3104213">
               <folding />
             </state>
           </provider>
@@ -106,7 +195,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/app/tower.js" />
+        <option value="$PROJECT_DIR$/www/app/entities/path.js" />
+        <option value="$PROJECT_DIR$/www/app/entities/mob.js" />
+        <option value="$PROJECT_DIR$/www/app/player.js" />
+        <option value="$PROJECT_DIR$/www/app/map.js" />
+        <option value="$PROJECT_DIR$/www/app/entities/tower.js" />
+        <option value="$PROJECT_DIR$/www/app/enums/towerTypes.js" />
+        <option value="$PROJECT_DIR$/www/app/enums/mobTypes.js" />
         <option value="$PROJECT_DIR$/www/app/main.js" />
+        <option value="$PROJECT_DIR$/www/app/game.js" />
+        <option value="$PROJECT_DIR$/www/app/entities/map.js" />
       </list>
     </option>
   </component>
@@ -202,6 +301,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estrella-td" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="enums" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estrella-td" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -229,6 +364,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\github\estrella-td\www\vendor" />
       <recent name="D:\Projects\github\estrella-td\www\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\github\estrella-td\www\app\entities" />
     </key>
   </component>
   <component name="RunManager">
@@ -427,9 +565,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/entities/path.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/entities/mob.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="37" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/entities/tower.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="35" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/enums/towerTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="2" selection-start="0" selection-end="138" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/enums/mobTypes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/entities/player.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/app/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="28" selection-start="265" selection-end="265" vertical-scroll-proportion="0.44345897">
+        <state line="12" column="9" selection-start="155" selection-end="155" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/entities/map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.3104213">
           <folding />
         </state>
       </provider>

@@ -1,11 +1,6 @@
 
 requirejs.config({
 	baseUrl: '..',
-	shim: {
-		'jquery': {
-			'exports': 'jQuery'
-		}
-	},
 	paths: {
 		'jquery': 'vendor/jquery.min',
 		'bootstrap': 'vendor/bootstrap.min'
@@ -13,11 +8,14 @@ requirejs.config({
 });
 
 require(
-	['jquery'],
+	[
+		'jquery',
+	    ''
+	],
+
 	function ($) {
 		'use strict';
 
-		// Lel
-		console.info("lel");
+
 	}
 );
