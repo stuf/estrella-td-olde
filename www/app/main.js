@@ -18,5 +18,6 @@ require(
 		'use strict';
 
 		// Lel
+		console.info("lel");
 	}
 );
