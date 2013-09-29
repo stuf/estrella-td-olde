@@ -5,19 +5,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/estrella-td.iws" afterPath="$PROJECT_DIR$/estrella-td.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/index.html" afterPath="$PROJECT_DIR$/www/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/main.js" afterPath="$PROJECT_DIR$/www/app/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/entities/map.js" afterPath="$PROJECT_DIR$/www/app/entities/map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/entities/mob.js" afterPath="$PROJECT_DIR$/www/app/entities/mob.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/enums/mobTypes.js" afterPath="$PROJECT_DIR$/www/app/enums/mobTypes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/entities/path.js" afterPath="$PROJECT_DIR$/www/app/entities/path.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/entities/player.js" afterPath="$PROJECT_DIR$/www/app/entities/player.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/entities/tower.js" afterPath="$PROJECT_DIR$/www/app/entities/tower.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/app/enums/towerTypes.js" afterPath="$PROJECT_DIR$/www/app/enums/towerTypes.js" />
     </list>
     <ignored path="estrella-td.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380417480293" ignored="false" />
+    <file path="/Dummy.txt" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380418740650" ignored="false" />
     <file path="/index.html" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380388475467" ignored="false" />
-    <file path="/main.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380391680435" ignored="false" />
+    <file path="/main.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380418975288" ignored="false" />
     <file path="/tower.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380393515750" ignored="false" />
     <file path="/mob.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380393378155" ignored="false" />
     <file path="/path.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380393271800" ignored="false" />
@@ -40,6 +33,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -76,7 +70,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -86,10 +79,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="4" selection-start="161" selection-end="161" vertical-scroll-proportion="0.18090452">
+            <state line="5" column="24" selection-start="75" selection-end="75" vertical-scroll-proportion="-3.4482758">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/app/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -113,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mob.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="mob.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/app/entities/mob.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="21" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+            <state line="27" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.52734375">
               <folding />
             </state>
           </provider>
@@ -153,7 +155,6 @@
         <option value="$PROJECT_DIR$/www/app/player.js" />
         <option value="$PROJECT_DIR$/www/app/map.js" />
         <option value="$PROJECT_DIR$/www/app/game.js" />
-        <option value="$PROJECT_DIR$/www/app/main.js" />
         <option value="$PROJECT_DIR$/www/app/entities/map.js" />
         <option value="$PROJECT_DIR$/www/app/entities/mob.js" />
         <option value="$PROJECT_DIR$/www/app/entities/path.js" />
@@ -162,6 +163,7 @@
         <option value="$PROJECT_DIR$/www/app/enums/mobTypes.js" />
         <option value="$PROJECT_DIR$/www/app/enums/towerTypes.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/app/main.js" />
       </list>
     </option>
   </component>
@@ -197,8 +199,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -228,6 +228,90 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estrella-td" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ivank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estrella-td" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ivank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="text" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estrella-td" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ivank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="estrella-td" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ivank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="display" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -297,6 +381,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -311,11 +397,11 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -416,7 +502,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20811099" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21024546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -487,74 +573,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/www/app/entities/player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="222" selection-end="222" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/entities/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/vendor/require.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="25" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.42744657">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/vendor/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="83606" selection-end="83606" vertical-scroll-proportion="0.08998875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="31" selection-start="251" selection-end="251" vertical-scroll-proportion="0.1799775">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/vendor/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="18" selection-start="139" selection-end="139" vertical-scroll-proportion="0.022497188">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/entities/map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="21" selection-start="177" selection-end="177" vertical-scroll-proportion="0.2734375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/app/entities/path.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="39" selection-start="79" selection-end="79" vertical-scroll-proportion="0.1171875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/entities/mob.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/entities/player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="39" selection-start="79" selection-end="79" vertical-scroll-proportion="0.1171875" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/app/entities/tower.js">
@@ -564,16 +585,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/enums/mobTypes.js">
+    <entry file="file://$PROJECT_DIR$/www/app/enums/towerTypes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+        <state line="4" column="21" selection-start="44" selection-end="44" vertical-scroll-proportion="0.078125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="24" selection-start="75" selection-end="75" vertical-scroll-proportion="-3.4482758">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/enums/towerTypes.js">
+    <entry file="file://$PROJECT_DIR$/www/vendor/ivank/ivank.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="44" selection-end="44" vertical-scroll-proportion="0.078125">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/vendor/ivank/join.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="5" selection-start="38" selection-end="38" vertical-scroll-proportion="0.078125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/vendor/ivank/join.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="205" selection-end="205" vertical-scroll-proportion="0.37109375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/vendor/ivank/Utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="371" selection-end="371" vertical-scroll-proportion="0.234375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/vendor/ivank/webgl-debug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="22" selection-start="1325" selection-end="1325" vertical-scroll-proportion="0.60546875">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/vendor/ivank/display/join.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/vendor/ivank/display/Sprite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -585,16 +662,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/app/main.js">
+    <entry file="file://$PROJECT_DIR$/www/app/entities/player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="193" selection-end="193" vertical-scroll-proportion="0.390625">
+        <state line="4" column="21" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
+    <entry file="file://$PROJECT_DIR$/www/app/enums/mobTypes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="4" selection-start="161" selection-end="161" vertical-scroll-proportion="0.18090452">
+        <state line="4" column="21" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/app/entities/mob.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="334" selection-end="334" vertical-scroll-proportion="0.52734375">
           <folding />
         </state>
       </provider>

@@ -3,17 +3,21 @@ requirejs.config({
 	baseUrl: '..',
 	paths: {
 		'jquery': 'vendor/jquery.min',
-		'bootstrap': 'vendor/bootstrap.min'
+		'bootstrap': 'vendor/bootstrap.min',
+		'ivank': 'vendor/ivank/ivank'
 	}
 });
 
 require(
 	[
-		'jquery'
+		'jquery',
+	    'ivank'
 	],
 
-	function ($) {
+	function ($, Ivank) {
 		'use strict';
+
+		console.info('Initialize', arguments);
 
 
 	}
