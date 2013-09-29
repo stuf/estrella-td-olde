@@ -12,6 +12,7 @@ define(
 	    Path,
 	    Player
 		) {
+		'use strict';
 
 		var mobs = [];
 		var path = new Path({

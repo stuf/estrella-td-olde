@@ -9,8 +9,7 @@ requirejs.config({
 
 require(
 	[
-		'jquery',
-	    ''
+		'jquery'
 	],
 
 	function ($) {
