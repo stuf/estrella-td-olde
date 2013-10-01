@@ -219,8 +219,6 @@
                     ctx.arc(coords[0], coords[1], radius, 0, (2 * Math.PI), false);
                     ctx.fill();
                 }
-
-                // Add tower to list on page
             }
 
             // void:drawMobs
@@ -267,18 +265,17 @@
 
                 $log.text(iter);
 
-                // update
+                // update scene
 
-                // clear
+                // clear scene
                 context.clearRect(0, 0, canvas.width, canvas.height);
 
                 // draw stuff
                 drawTowers(context, t);
                 drawMobs(context, m);
 
-                // Check if things are in range
+                // Check if mobs are in range
                 checkSituation(t, m);
-
 
                 // request new frame
                 requestAnimFrame(function() {
@@ -286,6 +283,7 @@
                 });
             }
 
+            // Our master button
             $("#go-derp").click(function () {
                 animate();
             });

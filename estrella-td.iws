@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cd57252-5429-40b4-9854-e3ca00ca062d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/www/gametest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/vendor/ivank/display/Graphics.js" afterPath="$PROJECT_DIR$/www/vendor/ivank/display/Graphics.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/vendor/ivank/display/display.js" afterPath="$PROJECT_DIR$/www/vendor/ivank/display/display.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/estrella-td.iws" afterPath="$PROJECT_DIR$/estrella-td.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/vendor/ivank/ivank.js" afterPath="$PROJECT_DIR$/www/vendor/ivank/ivank.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/www/gametest.html" afterPath="$PROJECT_DIR$/www/gametest.html" />
     </list>
     <ignored path="estrella-td.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -21,7 +17,7 @@
     <file path="/towerTypes.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380393672096" ignored="false" />
     <file path="/mobTypes.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380393744796" ignored="false" />
     <file path="/game.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380394178342" ignored="false" />
-    <file path="/ivantest.html" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380660056435" ignored="false" />
+    <file path="/ivantest.html" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380660314402" ignored="false" />
     <file path="/gametest.html" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380659538245" ignored="false" />
     <file path="/a.js" changelist="6cd57252-5429-40b4-9854-e3ca00ca062d" time="1380655009072" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -132,7 +128,7 @@
       <file leaf-file-name="gametest.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/gametest.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="238" column="0" selection-start="7393" selection-end="7393" vertical-scroll-proportion="2.160896">
+            <state line="285" column="32" selection-start="8754" selection-end="8754" vertical-scroll-proportion="0.69450104">
               <folding />
             </state>
           </provider>
@@ -553,7 +549,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/gametest.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="238" column="0" selection-start="7393" selection-end="7393" vertical-scroll-proportion="2.160896">
+        <state line="285" column="32" selection-start="8754" selection-end="8754" vertical-scroll-proportion="0.69450104">
           <folding />
         </state>
       </provider>
