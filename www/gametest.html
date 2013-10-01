@@ -73,11 +73,17 @@
     <!-- underscore.js gives us the utility function: _ -->
     <script type="text/javascript" src="vendor/underscore-min.js"></script>
     <script type="text/javascript">
+        // Our very lovely main loop support
         window.requestAnimFrame = (function(callback) {
-            return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
-                    function(callback) {
-                        window.setTimeout(callback, 1000 / 60);
-                    };
+            return
+                window.requestAnimationFrame ||
+                window.webkitRequestAnimationFrame ||
+                window.mozRequestAnimationFrame ||
+                window.oRequestAnimationFrame ||
+                window.msRequestAnimationFrame ||
+                function (callback) {
+                    window.setTimeout(callback, 1000 / 60);
+                };
         })();
 
         $(function () {
