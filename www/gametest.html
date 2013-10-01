@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+
+    <style type="text/css">
+
+        body {
+            margin: 20px;
+        }
+
+        canvas {
+            border: solid 2px #f00;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="row-fluid">
+            <div class="panel panel-default">
+                <div class="panel-heading">Canvas</div>
+                <div class="panel-body">
+                    <canvas id="canvas"></canvas>
+                </div>
+
+                <div class="panel-footer row-fluid">
+                    <div class="col-md-2">
+                        <button id="go-derp" class="btn btn-warning btn-lg">Start</button>
+                    </div>
+                    <div class="col-md-4">
+                        <div id="log">
+                            <span>Frame: <ins></ins></span>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row-fluid">
+            <div class="col-md-6">
+                <div id="towers" class="panel panel-default">
+                    <div class="panel-heading">Towers</div>
+                    <div class="panel-body">
+                        <ul id="tower-list" class="list-group">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Mobs</div>
+                    <div class="panel-body">
+                        <ul id="mob-list" class="list-group">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery gives us the utility function: $ -->
+    <script type="text/javascript" src="vendor/jquery.min.js"></script>
+
+    <!-- underscore.js gives us the utility function: _ -->
+    <script type="text/javascript" src="vendor/underscore-min.js"></script>
+    <script type="text/javascript">
+        window.requestAnimFrame = (function(callback) {
+            return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
+                    function(callback) {
+                        window.setTimeout(callback, 1000 / 60);
+                    };
+        })();
+
+        $(function () {
+
+            var $log = $("ins");
+            var $canvas = $("canvas");
+            $canvas.attr({ 'width': 640, 'height': 480 });
+
+            var $towerList = $("#tower-list");
+            var $mobList = $("#mob-list");
+
+            // Derp. Declaring "classes" inline. Because prototyped things are fun.
+            var Tower = function (stats) {
+                this.coords = stats.coords;
+                this.range = stats.range;
+
+                // While we're at it, let's throw it into the list for debugging shits and giggles.
+                var listItemAttrs = {
+                    'class': 'list-group-item',
+                    'id': _.uniqueId('tower-'),
+                    'text': 'Tower'
+                };
+
+                var $listItem = $("<li></li>", listItemAttrs);
+
+                var badgeAttrs = {
+                    'class': 'badge',
+                    'text': 'Nothing in range'
+                };
+
+                var $badge = $("<span></span>", badgeAttrs);
+
+                $badge.appendTo($listItem);
+                $listItem.appendTo($towerList);
+            };
+
+            Tower.prototype = {
+                getPos: function () {
+                    return this.coords;
+                },
+
+                getRadius: function () {
+                    return this.range;
+                },
+
+                // bool:isInRange
+                isInRange: function (mob) {
+                    var xDiff = Math.abs(this.coords[0] - mob.coords[0]);
+                    var yDiff = Math.abs(this.coords[1] - mob.coords[1]);
+
+                    return Math.sqrt(Math.pow(xDiff, 2) + Math.pow(yDiff, 2)) <= this.range;
+                }
+            }
+
+            var Mob = function (stats) {
+                this.coords = stats.coords;         // [x, y]
+                this.speed = stats.speed;
+                this.hp = stats.hp;
+
+                var listItemAttrs = {
+                    'class': 'list-group-item',
+                    'id': _.uniqueId('mob-'),
+                    'text': 'Mob'
+                }
+
+                var $listItem = $("<li></li>", listItemAttrs);
+
+                var badgeAttrs = {
+                    'class': 'badge',
+                    'text': 'Not in range'
+                };
+
+                var $badge = $("<span></span>", badgeAttrs);
+
+                // Mash it up
+                $badge.appendTo($listItem);
+                $listItem.appendTo($mobList);
+            }
+
+            Mob.prototype = {
+                getPos: function () {
+                    return this.coords;
+                },
+
+                getRadius: function () {
+                    return this.range;
+                },
+
+                moveX: function () {
+                    this.coords[0] = this.coords[0] + this.speed;
+
+                    if (this.coords[0] > $canvas.width()) {
+                        this.coords[0] = this.coords[0] - $canvas.width();  // Make it loooooooooooooooop
+                    }
+                }
+            }
+
+            var iter = 0;
+
+            var t = [];
+            var m = [];
+
+            // Make some dummy towers
+            t.push(new Tower({
+                coords: [100, 300],
+                range: 30
+            }))
+
+            t.push(new Tower({
+                coords: [200, 100],
+                range: 80
+            }))
+
+            // Make some dummy mobs
+            m.push(new Mob({
+                coords: [10, 50],
+                speed: 1,
+                hp: 50
+            }))
+
+            m.push(new Mob({
+                coords: [50, 100],
+                speed: 2,
+                hp: 100
+            }))
+
+            // void:drawTowers
+            function drawTowers(ctx, towers) {
+                ctx.fillStyle = "rgba(0, 0, 255, 0.2)";
+
+                var i = 0, len = towers.length;
+                for (i = 0; i < len; i++) {
+
+                    var tower = towers[i];
+                    var coords = tower.getPos();
+                    var radius = tower.getRadius();
+
+                    ctx.beginPath();
+                    ctx.arc(coords[0], coords[1], radius, 0, (2 * Math.PI), false);
+                    ctx.fill();
+                }
+
+                // Add tower to list on page
+            }
+
+            // void:drawMobs
+            function drawMobs(ctx, mobs) {
+                ctx.fillStyle = "rgb(255, 0, 0)";
+
+                var i = 0, len = mobs.length;
+                for (i = 0; i < len; i++) {
+
+                    var mob = mobs[i];
+                    var coords = mob.getPos();
+                    var size = (coords[0] + 2) - (coords[0] - 2)            // Wat
+
+                    ctx.fillRect(coords[0] - 2, coords[1] - 2, size, size);
+                    ctx.fill();
+
+                    mob.moveX();
+                }
+            }
+
+            // void:checkSituation
+            function checkSituation(towers, mobs) {
+                _.each(towers, function (tower) {
+                    // Now, check through each mob per tower.
+                    _.each(mobs, function (mob) {
+                        console.info("Tower: ", tower.coords, "; mob: ", mob.coords);
+
+                        if (tower.isInRange(mob)) {
+
+                        }
+                        else {
+                            // Deactivation or whatever
+                        }
+                    });
+                });
+            }
+
+            // void:animate
+            function animate() {
+                iter += 1;
+
+                var canvas = document.getElementById('canvas');
+                var context = canvas.getContext('2d');
+
+                $log.text(iter);
+
+                // update
+
+                // clear
+                context.clearRect(0, 0, canvas.width, canvas.height);
+
+                // draw stuff
+                drawTowers(context, t);
+                drawMobs(context, m);
+
+                // Check if things are in range
+                checkSituation(t, m);
+
+
+                // request new frame
+                requestAnimFrame(function() {
+                    animate();
+                });
+            }
+
+            $("#go-derp").click(function () {
+                animate();
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

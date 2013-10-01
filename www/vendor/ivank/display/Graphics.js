@@ -272,7 +272,7 @@
 	 * Draw a circle
 	 * @param x		X coordinate of a center
 	 * @param y		Y coordinate of a center
-	 * @param r		radius
+	 * @param r		range
 	 */
 	Graphics.prototype.drawCircle = function(x, y, r)
 	{
@@ -631,7 +631,7 @@
 		Stage._setVC(this.vbuf);
 		Stage._setEBF(this.ibuf);
 		
-		gl.drawElements(gl.TRIANGLES, this.ind.length, gl.UNSIGNED_SHORT, 0);	// druhý parametr - poèet indexù
+		gl.drawElements(gl.TRIANGLES, this.ind.length, gl.UNSIGNED_SHORT, 0);	// druhï¿½ parametr - poï¿½et indexï¿½
 		
 	}
 	UTgs.prototype.clear = function()
